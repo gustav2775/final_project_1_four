@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping card</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/shoppingcard.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="topForm">
+                <div class="logo">
+                    <a href="#">
+                        <img src="../img/logo.png" alt="logo">
+                        Bran<span>D</span>
+                    </a>
+                </div>
+                <form action="" class="searchFormTop">
+                    <button class="browse">
+                        Browse <i class="fas fa-caret-down"></i>
+                    </button>
+
+                    <input type="text" placeholder="Search for item...">
+
+                    <button class="searchTopBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+                <a class="topBasket" href="shopping card.html">
+                    <img src="../img/market.png" alt="">
+                </a>
+
+                <div class="MyAccountTop">
+                    <button class="btn  dropdown-toggle MyAccountBtn">
+                        My Account
+                    </button>
+
+                </div>
+            </div>
+            <nav class="topNav">
+
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="product.html">MAN</a>
+                <a class="nav-link" href="product.html">WOMEN</a>
+                <a class="nav-link" href="#">KIDS</a>
+                <a class="nav-link" href="#">ACCOSERIES</a>
+                <a class="nav-link" href="#">Featured</a>
+                <a class="nav-link" href="#">Hot Deals </a>
+
+            </nav>
+            <div class="TopCrumb">
+
+                <div class="leftPatch">
+                    New Arrivals
+                </div>
+                <nav class="rightPatch">
+                    <ol class="breadcrumb justify-content-end">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Men</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">New Arrivals</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container ">
+        <div class="mainshopcard">
+            <div class="shoppingCardProduct shoppingCardTop">
+                <div class="SCPLeft SCTLeft">
+                    Product Details
+                </div>
+                <div class="SCPRight SCTRight">
+                    <p> Unite Price</p>
+                    <p>Quantity</p>
+                    <p>shipping</p>
+                    <p>Subtotal</p>
+                    <p>ACTION</p>
+                </div>
+            </div>
+            <div class="shoppingCardProduct">
+                <div class="SCPLeft">
+                    <img src="img/Layer43.jpg" alt="">
+                    <div class="SCPLeftInf">
+                        <p class="SCPName">Mango People T-shirt</p>
+                        <p class="SCPSpecification">Color:<span>Red</span></p>
+                        <p class="SCPSpecification"> Size: <span>Xll</span></p>
+                    </div>
+                </div>
+                <div class="SCPRight">
+                    <p> <span>Unite Price</span>$150</p>
+                    <p><span>Quantity</span> <input type="text" value="2"></p>
+                    <p><span>shipping</span>FREE</p>
+                    <p><span>Subtotal</span>$300</p>
+                    <button><i class="fas fa-times-circle"></i></button>
+                </div>
+            </div>
+            <div class="shoppingCardProduct">
+                <div class="SCPLeft">
+                    <img src="img/Layer44.jpg" alt="">
+                    <div class="SCPLeftInf">
+                        <p class="SCPName">Mango People T-shirt</p>
+                        <p class="SCPSpecification">Color:<span>Red</span></p>
+                        <p class="SCPSpecification"> Size: <span>Xll</span></p>
+                    </div>
+                </div>
+                <div class="SCPRight">
+                    <p><span>Unite Price</span>$150</p>
+                    <p><span>Quantity</span> <input type="text" value="2"></p>
+                    <p><span>Shipping</span>FREE</p>
+                    <p><span>Subtotal</span>$300</p>
+                    <button><i class="fas fa-times-circle"></i></button>
+                </div>
+            </div>
+
+            <div class="shoppingCardProduct">
+                <div class="SCPLeft">
+                    <img src="img/Layer45.jpg" alt="">
+                    <div class="SCPLeftInf">
+                        <p class="SCPName">Mango People T-shirt</p>
+                        <p class="SCPSpecification">Color:<span>Red</span></p>
+                        <p class="SCPSpecification"> Size: <span>Xll</span></p>
+                    </div>
+                </div>
+                <div class="SCPRight">
+                    <p> <span>Unite Price</span>$150</p>
+                    <p><span>Quantity</span> <input type="text" value="2"></p>
+                    <p><span>shipping</span>FREE</p>
+                    <p><span>Subtotal</span>$300</p>
+                    <button><i class="fas fa-times-circle"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="shoppingCardProductBtnBox">
+            <div class="shoppingCardProductBtn">
+                <input type="reset" value="cLEAR SHOPPING CART">
+            </div>
+            <div class="shoppingCardProductBtn">
+                <input type="button" value="cONTINUE sHOPPING">
+            </div>
+        </div>
+        <div class="shoppingCardFooter">
+            <form class="shippingaddress ">
+                <h4>Shipping Address</h4>
+                <input type="text" list="contries" placeholder="Contries " required>
+                <datalist id="contries">
+                    <option value="Bangladesh"></option>
+                </datalist>
+                <input type="text" list="state" placeholder="State " required>
+                <datalist id="state">
+                    <option value="State"></option>
+                </datalist>
+                <input type="text" list="zip" placeholder="Zip " required>
+                <datalist id="zip">
+                    <option value="zip"></option>
+                </datalist>
+                <button>get a quote</button>
+            </form>
+            <form class="CouponDiscont">
+                <h4>coupon discount</h4>
+                <input type="text" list="state1" placeholder="State " required>
+                <datalist id="state1">
+                    <option value="State"></option>
+                </datalist>
+                <button>Apply coupon</button>
+
+            </form>
+
+            <form action class="totalForm">
+                <div class="totalFormBox">
+                    <p class="subTotal"> Sub total
+                        <output name="result"> 900$ </output> </p>
+                    <p class="grandTotal"> GRAND TOTAL
+                        <output name="result"> 900$ </output> </p>
+                </div>
+                <a class="checkoutBtn"href="checkout.html"> proceed to checkout</a>
+            </form>
+        </div>
+        <div class="subscribe">
+            <div class="container">
+                <div class="feedback">
+
+                    <p class="feedbackText"> “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                        purus condimentum a. Aliquam
+                        condimentum mattis neque sed pretium”</p>
+                    <p class="feedbackAuthor">Bin Burhan </p>
+                    <p class="feedbackAuthor2">Dhaka, Bd</p>
+                    <div class="paginationBox">
+                        <a href="#0" class="pagination"></a>
+                        <a href="#0" class="pagination active"></a>
+                        <a href="#0" class="pagination"></a>
+                    </div>
+
+                </div>
+                <div class="subscribeBox">
+                    <h4>subsribe</h4>
+                    <p> FOR OUR NEWLETTER AND PROMOTION</p>
+
+                    <form class="subscribeForm">
+                        <input type="text" placeholder="Enter Your Email">
+                        <button class="">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="footerContent">
+        <div class="container">
+            <div class="footerContentInf">
+                <div class="logo">
+                    <a href="#" class="">
+                        <img src="../img/logo.png" alt="logo">
+                        Bran<span>D</span>
+                    </a>
+                </div>
+
+                <p class="footerPresentation">Objectively transition extensive data rather than cross functional
+                    solutions.
+                    Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly
+                    syndicate an expanded array of processes and cross-unit partnerships.
+                </p>
+
+                <p class="footerPresentation">
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </p>
+            </div>
+
+            <nav class="footerContentNav">
+                <div class="">
+                    <h4>Company</h4>
+                    <a href="#" class="nav-link">Home </a>
+                    <a href="#" class="nav-link">Shop</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">How It Works</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </div>
+                <div class="">
+                    <h4>Information</h4>
+                    <a href="#" class="nav-link">Tearms & Condition </a>
+                    <a href="#" class="nav-link">Privacy Policy</a>
+                    <a href="#" class="nav-link">How to Buy</a>
+                    <a href="#" class="nav-link">How to Sell</a>
+                    <a href="#" class="nav-link">Promotion</a>
+                </div>
+                <div class="">
+                    <h4>Shop category</h4>
+                    <a href="#" class="nav-link">Men </a>
+                    <a href="#" class="nav-link">Women</a>
+                    <a href="#" class="nav-link">Child</a>
+                    <a href="#" class="nav-link">Apparel</a>
+                    <a href="#" class="nav-link">Brows All</a>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="footerLeft">
+                © 2017 Brand All Rights Reserved.
+            </span>
+            <nav class=" footernav">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-google"></i></a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/6ae2ca472e.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</body>
+
+</html>
