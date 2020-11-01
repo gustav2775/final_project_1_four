@@ -1,4 +1,4 @@
-Vue.component("filter_catalog", {
+Vue.component("search", {
   props: ["positiveFilter", "products"],
   data() {
     return {
@@ -17,4 +17,17 @@ Vue.component("filter_catalog", {
         this.$root.positiveFilter.lenght = this.$root.products;
     },
   },
+  template: `
+  <form action="" class="searchFormTop">
+    <button class="browse">
+      Browse <i class="fas fa-caret-down"></i>
+    </button>
+
+    <input type="text" placeholder="Search for item..." v-model="userSearch">
+
+    <button class="searchTopBtn">
+      <i class="fas fa-search"></i>
+    </button>
+  </form>
+  `,
 });

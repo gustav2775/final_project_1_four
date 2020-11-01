@@ -1,21 +1,50 @@
-const API = "../json/";
+/* const API = "https://github.com/gustav2775/final_project_1_four/blob/dev/src/json/"; */
+const API = "./din_comp/";
 
 const app = new Vue({
   el: "#app",
   data() {
     return {
-      products: [],
       positiveFilter: [],
+      backet_products: [],
+      products:[]
     };
   },
   methods: {
     getJson(url) {
-      return fetch(url)
-        .then((data) => data.json())
+        return fetch(url)
+          .then(result => result.json())
+          .catch(error => {
+            console.log(error);
+          });
+      },
+      
+    /* postJson(url, data) {
+      return fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((result) => result.json())
         .catch((error) => {
-          console.log(error);
+          this.$refs.error.setError(error);
         });
     },
+    putJson(url, data) {
+      return fetch(url, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((result) => result.json())
+        .catch((error) => {
+          this.$refs.error.setError(error);
+        });
+    }, */
   },
   template: `
   <div>
@@ -28,27 +57,15 @@ const app = new Vue({
                         Bran<span>D</span>
                     </a>
                 </div>
-                <form action="" class="searchFormTop">
-                    <button class="browse">
-                        Browse <i class="fas fa-caret-down"></i>
-                    </button>
 
-                    <input type="text" placeholder="Search for item...">
+                <search ref="./din_comp/catalog_filter.js"></search>
 
-                    <button class="searchTopBtn">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
-
-                <a class="topBasket" href="shopping card.html">
-                    <img src="./assets/img/market.png" alt="">
-                </a>
+                <backet ref="./din_comp/backet.js"></backet>
 
                 <div class="MyAccountTop">
                     <button class="btn  dropdown-toggle MyAccountBtn">
                         My Account
                     </button>
-
                 </div>
             </div>
             <nav class="topNav">
@@ -76,7 +93,6 @@ const app = new Vue({
         </div>
     </header>
 
-       
     <home ref="Home.js"> </home>
 
     <footer class="footer">
