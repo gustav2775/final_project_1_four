@@ -1,0 +1,14 @@
+[
+  {
+    "id_product": 2,
+    "product_name": "Mango People T-shirt",
+    "img": "product2.jpg",
+    "price": 52.0,
+    "quantity": 1,
+    "color": {
+      "black": "#000"
+    },
+    "size": ["S"],
+    "shipping": "free"
+  }
+]

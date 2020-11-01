@@ -1,0 +1,213 @@
+/* header animation */
+.logo {
+    transition-duration: 1s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.MyAccountTop:hover {
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+
+.MyAccountTop:hover button {
+    box-shadow: 4px 4px 3px #e6657652;
+}
+
+.topNav {
+    &:hover .nav-link {
+        transform: scale(1.05);
+        transition-duration: 0.5s;
+    }
+}
+
+/* main index animation */
+
+section {
+
+    img {
+        height: 280px;
+        transition-duration: 2s;
+        backface-visibility: hidden;
+    }
+}
+
+section:hover img {
+    transform: rotateY(150deg);
+}
+
+.productContainer {
+    a:hover {
+        transition-duration: 2s;
+        text-decoration: none;
+        color: black;
+        border-radius: 50%;
+    }
+}
+
+/* featureBanner animation */
+
+.featureBox .featureBoxFormImg {
+
+    img {
+        animation: featureImg 5s linear 0s infinite;
+    }
+}
+
+@keyframes featureImg {
+    to {
+        transform: rotateY(0deg);
+    }
+
+    from {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Subscribe animation */
+
+.subscribeForm {
+    input {
+        box-shadow: 0 2px 8px #e1e1e1;
+        transition-duration: .5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    button {
+        box-shadow: 4px 2px 8px $roseMainColor;
+        transition-duration: .5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+/* Footer animation */
+
+.footerContentNav {
+    a {
+        transition-duration: .5s;
+
+        &:hover {
+            transform: scale(1.1);
+            color: $roseMainColor;
+        }
+    }
+}
+
+.footernav {
+
+    a {
+        position: relative;
+
+        &:hover {
+            animation: footernav .4s linear 0s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes footernav {
+    to {
+        top: 0
+    }
+
+    from {
+        top: 5px;
+        transform: scale(1.1);
+    }
+}
+
+/* productMain animation */
+.LeftmainNav ul {
+    animation-name: LeftmainNavAnim;
+    animation-duration: 0.5s, .2s;
+    animation-delay: 0, 0.5s;
+}
+
+@keyframes LeftmainNavAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.pagination {
+    button {
+        transition-duration: .5s;
+        transition-delay: .2s;
+
+        &:hover {
+            background-color: #fddce1a8;
+            box-shadow: 0 0 17px $roseMainColor;
+        }
+    }
+}
+
+/* infStockProduct animation */
+.infStockProduct {
+
+    .freeDevilery,
+    .sales,
+    .quality {
+        animation: featureImg 5s linear 0s infinite;
+
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+}
+
+/* shoppingcardMain animation */
+.shoppingCardProductBtn {
+    transition-duration: .5s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.CouponDiscont,
+.shippingaddress {
+    button{
+    transition-duration: .5s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+}
+
+.totalForm {
+    button {
+        transition-duration: .5s;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 2px 8px $roseMainColor;
+        }
+    }
+}
+
+/* singlepage animation */
+.specificationsProduct{
+    button {
+        transition-duration: .5s;
+        transition-delay: .2s;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: #fddce1a8;
+            box-shadow: 0 0 17px $roseMainColor;
+        }
+    }
+}

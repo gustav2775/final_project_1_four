@@ -1,0 +1,209 @@
+.header {
+    height: auto;
+    display: flex;
+    @media (max-width: 991px) {
+        width: auto;
+    }
+}
+
+.container {
+    @media (max-width: 991px) {
+        width: auto;
+    }
+}
+
+.topForm {
+    display: flex;
+    width: auto;
+    align-items: center;
+    height: 100px;
+
+    @media (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+
+        >* {
+            margin-top: 10px;
+        }
+    }
+
+    >* {
+        border: none;
+        line-height: 34px;
+        height: 34px;
+        padding: 0;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .logo {
+        height: 51px;
+        padding-right: 60px;
+        @media (max-width: 991px) {
+           padding: 0; 
+        }
+        a {
+
+            font-size: 27px;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #000;
+            text-decoration: none;
+    
+            span {
+                color: $roseMainColor;
+                font-weight: 900;
+            }
+        }
+    }
+
+   
+
+    .searchFormTop {
+        display: flex;
+        align-items: center;
+        height: 37px;
+        width: 402px;
+        border: 1px solid $lightGrayColor;
+
+        @media (max-width:575px) {
+            width: auto;
+        }
+
+        >* {
+            border: none;
+            line-height: 34px;
+            height: 34px;
+            padding: 0;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .browse {
+            width: 85px;
+            font-weight: 400;
+            font-size: 14px;
+            color: $greyMainColor;
+            border-right: 1px solid $lightGrayColor;
+
+            i {
+                padding-left: 8px;
+            }
+        }
+
+        input {
+            padding: 15px;
+            width: 280px;
+            font-size: 14px;
+            font-weight: 300;
+            color: $lightGrayColor;
+            border-right: 1px solid $lightGrayColor;
+
+            @media (max-width:575px) {
+                width: 115px;
+            }
+        }
+
+        .searchTopBtn {
+            text-align: center;
+
+            i {
+                padding: 10px;
+                font-size: 14px;
+                color: $lightGrayColor;
+            }
+
+        }
+    }
+
+    .topBasket {
+        margin-left: auto;
+        margin-right: 20px;
+
+        @media (max-width: 991px) {
+            margin: 0;
+        }
+
+    }
+
+    .MyAccountBtn {
+        width: 130px;
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        background-color: $roseMainColor;
+    }
+}
+
+.topNav {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    @media (max-width:991px) {
+        height: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+    a {
+        padding: 20px;
+        line-height: 12px;
+        font-size: 14px;
+        color: rgb(34, 34, 34);
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:hover {
+            border-bottom: 3px solid $roseMainColor;
+        }
+
+        @media (max-width:991px) {
+            padding: 10px;
+        }
+    }
+}
+
+.TopCrumb {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width:991px) {
+        flex-direction: column;
+    }
+
+    .leftPatch {
+        font-size: 24px;
+        font-weight: 900;
+        color: $roseMainColor;
+        text-transform: uppercase;
+    }
+
+    .rightPatch {
+        a {
+            font-size: 14px;
+            font-weight: 300;
+            color: $greyMainColor;
+            text-transform: uppercase;
+        }
+
+        .active {
+            font-size: 14px;
+            font-weight: 700;
+            color: $roseMainColor;
+            text-transform: uppercase;
+        }
+    }
+}

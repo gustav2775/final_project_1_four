@@ -1,0 +1,58 @@
+.infStockProduct {
+    min-height: 340px;
+    width: inherit;
+    background: #222224;
+    display: flex;
+    align-items: center;
+  
+
+    .container {
+        min-height: 145px;
+        display: inherit;
+        flex-direction: row;
+        justify-content: space-around;
+        @media( max-width:576px){
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        >* {
+            width: 320px;
+            height: 145px;
+            display: inherit;
+            flex-direction: column;
+            margin: 0;
+
+            h3 {
+                padding-top: 60px;
+                padding-bottom: 5px;
+                font-size: 20px;
+                color: rgb(251, 251, 251);
+                font-weight: 700;
+                text-align: center;
+            }
+
+            p {
+                font-size: 14px;
+                color: rgb(251, 251, 251);
+                font-weight: 400;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.freeDevilery {
+    background: center 0 url(../img/Forma1.png) no-repeat;
+}
+
+.sales {
+    background: center 0 url(../img/Forma2.png) no-repeat;
+}
+
+.quality {
+    background: center 0 url(../img/Forma3.png) no-repeat;
+}

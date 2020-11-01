@@ -1,0 +1,134 @@
+.footerContent {
+    padding-top: 100px;
+    padding-bottom: 90px;
+
+    @media (max-width:991px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .container {
+        display: flex;
+        min-height: 245px;
+
+        @media (max-width:991px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.footerContentInf {
+    width: 459px;
+    margin-right: 70px;
+    @media (max-width:991px) {
+        margin-right: 0;
+        width: auto;
+        
+    }
+    
+
+    p {
+        padding-top: 25px;
+        margin: 0;
+        font-weight: 300;
+        font-size: 14px;
+        color: $lightGrayColor;
+
+        @media (max-width:991px) {
+            padding-top: 15px;
+            
+        }
+    }
+}
+
+.footerContentNav {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 190px;
+
+        @media (max-width:488px) {
+           
+            height: auto;
+        }
+    }
+
+    h4 {
+        padding-bottom: 48px;
+        font-size: 18px;
+        color: $roseMainColor;
+        font-weight: 700;
+        margin: 0;
+
+        @media (max-width:991px) {
+            padding-bottom: 10px;
+        }
+        @media (max-width:488px) {
+            font-size: 14px;
+        }
+    }
+
+    a {
+        line-height: 40px;
+        padding: 0;
+        font-weight: 400;
+        font-size: 16px;
+        color: $lightGrayColor;
+
+        @media (max-width:991px) {
+            line-height: 20px;
+        }
+        @media (max-width:488px) {
+            font-size: 14px; 
+        }
+    }
+}
+
+
+
+
+
+.footer {
+    background-color: #e6e6e6;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+
+        @media (max-width:488px) {
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+}
+
+.footerLeft {
+    font-weight: 300;
+    color: $lightGrayColor
+}
+
+.footernav {
+    display: flex;
+
+    & :not(:last-child) {
+        margin-right: 8px;
+    }
+
+    a {
+        line-height: 32px;
+        width: 33px;
+        text-align: center;
+        background-color: white;
+        font-size: 16px;
+        color: $lightGrayColor;
+
+        &:hover {
+            background-color: $roseMainColor;
+            color: white;
+        }
+    }
+}

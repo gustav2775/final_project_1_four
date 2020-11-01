@@ -1,0 +1,245 @@
+.singlemain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img     {
+        @media(max-width:596px) {
+            width: 300px;
+        }
+        
+    }
+
+    .singlemainBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+        color: $roseMainColor;
+        font-weight: 900;
+
+        .borderbutton {
+            width: 63px;
+            border-bottom: 3px solid $roseMainColor;
+            margin: 11px;
+        }
+
+        .singlemainText {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2f2f2f;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        color: $lightGrayColor;
+        line-height: 20px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .productInf {
+
+        .productInfBox {
+            display: flex;
+            justify-content: center;
+            width: 336px;
+            @media(max-width:356px) {
+                width: 300px;
+            }
+            
+
+            div {
+                width: 177px;
+                font-size: 14px;
+                color: rgb(185, 185, 185);
+                font-weight: 700;
+                text-align: center;
+                @media(max-width:356px) {
+                    width: 130px;
+                }
+
+                span {
+                    color: #2f2f2f;
+                }
+            }
+        }
+
+        .singlemainprise {
+            font-size: 24px;
+            color: rgb(239, 91, 112);
+            font-weight: 700;
+            text-align: center;
+            padding-top: 20px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.navfooterbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.specificationsProduct {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 155px;
+
+    @media(max-width:596px) {
+        margin: 20px 0;
+    }
+
+
+    .specificationsProductBox {
+        display: flex;
+        justify-content: center;
+
+        @media(max-width:465px) {
+            flex-direction: column;
+        }
+
+
+        p {
+            font-size: 14px;
+            color: rgb(47, 47, 47);
+            font-weight: 700;
+        }
+
+        input {
+
+            font-size: 13px;
+            color: $lightGrayColor;
+            border: none
+        }
+
+        input:focus {
+            outline: 1px solid $lightGrayColor;
+        }
+
+    }
+
+    button {
+        padding: 20px 206px 20px 250px;
+        border: 1px solid $roseMainColor;
+        background: url(../img/Forma1copy.png) no-repeat;
+        background-position: 206px center;
+        font-size: 16px;
+        color: $roseMainColor;
+        font-weight: 700;
+
+        @media(max-width:596px) {
+            padding: 20px 75px 20px 75px;
+            background-position: 25px center;
+        }
+    }
+}
+
+.recomedationProduct {
+    margin-top: 235px;
+    
+
+    @media(max-width:768px) {
+        margin-top: 25px;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: rgb(77, 77, 77);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 74px;
+    }
+
+    .recomedationProductBox {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-height: 340px;
+
+        section {
+            width: 260px;
+            height: 355px;
+            position: relative;
+
+            &:hover {
+                box-shadow: 10px 10px 22px #acaaaa;
+            }
+
+            &:hover .addCardwrap {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 100;
+            }
+        }
+
+        .addCardwrap {
+            position: absolute;
+            display: none;
+            width: 100%;
+            height: inherit;
+            background: rgba(0, 0, 0, 0.5);
+
+            .addCard {
+                line-height: 36px;
+                text-decoration: none;
+                font-size: 13px;
+                color: white;
+                font-weight: 700;
+
+                border: 1px solid white;
+                background: url(../img/market2.png) no-repeat;
+                background-position: 10px;
+                padding: 16px 16px 16px 40px;
+                box-sizing: border-box;
+            }
+
+        }
+
+        @media(max-width: 526px) {
+            justify-content: center;
+        }
+
+        .productDisable {
+            position: absolute;
+            background-color: white;
+
+            .imgfix {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 263px;
+                height: 286px;
+            }
+
+            h2 {
+                font-size: 14px;
+                font-weight: 400;
+                color: $lightGrayColor;
+                text-transform: uppercase;
+                line-height: 27px;
+                text-align: left;
+                margin: 0;
+            }
+
+            p {
+
+                font-size: 16px;
+                color: $roseMainColor;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: left;
+            }
+        }
+    }
+}
