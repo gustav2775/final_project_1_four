@@ -1,0 +1,306 @@
+.mainshopcard {
+    margin-bottom: 78px;
+
+    @media(max-width: 1023px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+.shoppingCardProduct {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: 1023px) {
+        flex-direction: column;
+
+    }
+}
+
+.shoppingCardTop {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @media(max-width: 1023px) {
+        display: none;
+    }
+
+    .SCTLeft {
+        width: 280px;
+        margin: 0;
+    }
+
+    .SCTRight {
+        width: 680px;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+            width: 113px;
+            text-align: center;
+
+        }
+    }
+}
+
+
+
+.shoppingCardProduct {
+    margin-top: 50px;
+
+
+    .SCPLeft {
+        width: 293px;
+        height: inherit;
+        display: block;
+        position: relative;
+
+        img {
+            float: left;
+        }
+    }
+
+    .SCPRight {
+        width: 680px;
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: 1023px) {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+        }
+
+        input {
+            width: 30px;
+            text-align: center;
+        }
+
+        span {
+            display: none;
+            font-size: 14px;
+            color: rgb(34, 34, 34);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+
+            @media(max-width: 1023px) {
+                display: block;
+            }
+        }
+
+        p,
+        button {
+            margin: 0;
+            width: 113px;
+            text-align: center;
+
+            @media(max-width: 1023px) {
+                width: auto;
+                padding: 5px;
+            }
+        }
+
+        button {
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.SCPLeftInf {
+    position: absolute;
+    width: auto;
+    height: inherit;
+    left: 118px;
+
+    .SCPName {
+        font-size: 13px;
+        font-weight: 700;
+        color: rgb(34, 34, 34);
+        text-transform: uppercase;
+    }
+
+    .SCPSpecification {
+        font-size: 13px;
+        font-weight: 400;
+        color: rgb(87, 87, 87);
+
+        span {
+            color: #939292;
+            padding-left: 15px;
+        }
+    }
+}
+    .shoppingCardProductBtnBox {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 90px;
+
+        @media(max-width: 1023px) {
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+
+        @media (max-width:400px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            width: 200px;
+            text-align: center;
+            font-size: 14px;
+            color: rgb(74, 74, 74);
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 1px solid  #939292;
+            border-radius: 50px;
+
+            &:focus {
+                outline: none;
+                box-shadow: 2px 2px 2px #939292;
+            }
+        }
+    }
+
+
+    .shoppingCardFooter {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: 1023px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 15px;
+            margin-top: 0;
+        }
+
+    }
+
+    .shippingaddress,
+    .CouponDiscont,
+    .totalForm {
+        width: 345px;
+        height: 256px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media(max-width: 1023px) {
+            height: auto;
+            width: 320px;
+            text-align: center;
+            padding: 20px;
+        }
+
+    }
+
+    .shippingaddress h4,
+    .CouponDiscont h4 {
+        font-size: 16px;
+        color: rgb(34, 34, 34);
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .shippingaddress input,
+    .CouponDiscont input {
+        height: 30px;
+        padding-left: 16px;
+        border: none;
+        font-size: 13px;
+        color: rgb(177, 177, 177);
+    }
+
+    .shippingaddress button,
+    .CouponDiscont button {
+        width: 110px;
+        padding-left: 16px;
+        text-align: left;
+        font-size: 11px;
+        color: rgb(74, 74, 74);
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none
+    }
+
+    .shippingaddress button:focus,
+    .CouponDiscont button:focus,
+    .shippingaddress input:focus,
+    .CouponDiscont input:focus {
+        outline: none;
+        border-radius: 50px;
+        box-shadow: 2px 2px 2px #939292;
+    }
+
+    .totalForm {
+        height: 172px;
+        width: 272px;
+
+        @media(max-width: 1023px) {
+            height: auto;
+        }
+
+        .totalFormBox {
+            text-align: right;
+
+            .subTotal {
+                padding-top: 40px;
+                padding-bottom: 20px;
+                height: 15px;
+                margin: 0;
+                font-size: 11px;
+                font-weight: 300;
+                color: rgb(74, 74, 74);
+                text-transform: uppercase;
+
+                @media(max-width: 1023px) {
+                    padding: 5px;
+                }
+
+                output {
+                    color: #545454;
+                    margin: 0;
+                }
+            }
+
+            .grandTotal {
+                font-size: 16px;
+                color: rgb(34, 34, 34);
+                font-weight: 700;
+                text-transform: uppercase;
+                margin: 0;
+
+                output {
+
+                    color: $roseMainColor;
+                }
+            }
+        }
+
+        button {
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.767);
+            font-weight: 700;
+            text-transform: uppercase;
+            background: $roseMainColor;
+        }
+    }

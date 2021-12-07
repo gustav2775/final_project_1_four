@@ -1,0 +1,104 @@
+
+
+.checkoutStep {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    text-transform: uppercase;
+    line-height: 70px;
+}
+
+.checkoutFormStep1 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 75px;
+    @media( max-width: 768px){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.checkoutFormStepLeft,
+.checkoutFormStepRight {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 345px;
+    @media( max-width: 390px){
+        width: auto;
+    }
+    a {
+        font-size: 13px;
+        font-weight: 400;
+        color: $lightGrayColor;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: 700;
+        font-size: 12px;
+        color: rgb(34, 34, 34);
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        sup {
+            font-size: 16px;
+            color: $roseMainColor;
+        }
+    }
+
+    .checkoutFormFast {
+        margin-bottom: 0;
+        line-height: 30px;
+    }
+    input{
+        padding: 8px;
+        border: none;
+        &:focus{
+            outline: none;
+        }
+    }
+
+
+}
+.checkoutFormStepEmail,.checkoutFormStepPass{
+    padding: 12px;
+}
+
+.checkoutFormStepTitle {
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 40px;
+}
+
+.checkoutFormStepBtn {
+    font-size: 14px;
+    color: $greyMainColor;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 180px;
+    height: 50px;
+    border: none;
+    @media( max-width: 330px){
+        width: 100px;
+    }
+}
+
+.textinfStep {
+    font-size: 13px;
+    font-weight: 400;
+    color: $roseMainColor;
+    line-height: 50px;
+    sup{
+        font-size: 16px;
+    }
+}
+
+.checkoutFormStepRight span a {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(34, 34, 34)
+}

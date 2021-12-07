@@ -1,0 +1,1015 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+/* line 7, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_variables.scss */
+body {
+  font-family: Lato, sans-serif;
+  max-width: 1600px;
+  margin: 0;
+}
+
+/* line 14, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_variables.scss */
+.container {
+  width: 1140px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+/* line 20, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_variables.scss */
+.logo {
+  height: 51px;
+  padding-right: 60px;
+}
+
+@media (max-width: 991px) {
+  /* line 20, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_variables.scss */
+  .logo {
+    padding: 0;
+  }
+}
+
+/* line 28, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_variables.scss */
+.logo a {
+  color: black;
+  font-size: 27px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 35, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_variables.scss */
+.logo a span {
+  color: #f16d7f;
+  font-weight: 900;
+}
+
+/* line 1, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.header {
+  height: auto;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  /* line 1, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+  .header {
+    width: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 9, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+  .container {
+    width: auto;
+  }
+}
+
+/* line 15, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm {
+  display: flex;
+  width: auto;
+  align-items: center;
+  height: 100px;
+}
+
+@media (max-width: 991px) {
+  /* line 15, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+  .topForm {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  /* line 27, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+  .topForm > * {
+    margin-top: 10px;
+  }
+}
+
+/* line 32, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm > * {
+  border: none;
+  line-height: 34px;
+  height: 34px;
+  padding: 0;
+}
+
+/* line 38, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm > *:focus {
+  outline: none;
+}
+
+/* line 43, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .logo {
+  height: 51px;
+  padding-right: 60px;
+}
+
+@media (max-width: 991px) {
+  /* line 43, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+  .topForm .logo {
+    padding: 0;
+  }
+}
+
+/* line 49, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .logo a {
+  font-size: 27px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 57, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .logo a span {
+  color: #f16d7f;
+  font-weight: 900;
+}
+
+/* line 66, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .searchFormTop {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  width: 402px;
+  border: 1px solid #c2c2c2;
+}
+
+@media (max-width: 575px) {
+  /* line 66, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+  .topForm .searchFormTop {
+    width: auto;
+  }
+}
+
+/* line 77, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .searchFormTop > * {
+  border: none;
+  line-height: 34px;
+  height: 34px;
+  padding: 0;
+}
+
+/* line 83, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .searchFormTop > *:focus {
+  outline: none;
+}
+
+/* line 88, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .searchFormTop .browse {
+  width: 85px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #5b5b5b;
+  border-right: 1px solid #c2c2c2;
+}
+
+/* line 95, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .searchFormTop .browse i {
+  padding-left: 8px;
+}
+
+/* line 100, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .searchFormTop input {
+  padding: 15px;
+  width: 280px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+}
+
+@media (max-width: 575px) {
+  /* line 100, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+  .topForm .searchFormTop input {
+    width: 115px;
+  }
+}
+
+/* line 113, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .searchFormTop .searchTopBtn {
+  text-align: center;
+}
+
+/* line 116, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .searchFormTop .searchTopBtn i {
+  padding: 10px;
+  font-size: 14px;
+  color: #c2c2c2;
+}
+
+/* line 125, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .topBasket {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+@media (max-width: 991px) {
+  /* line 125, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+  .topForm .topBasket {
+    margin: 0;
+  }
+}
+
+/* line 135, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topForm .MyAccountBtn {
+  width: 130px;
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  background-color: #f16d7f;
+}
+
+/* line 144, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topNav {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (max-width: 991px) {
+  /* line 144, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+  .topNav {
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+/* line 159, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topNav a {
+  padding: 20px;
+  line-height: 12px;
+  font-size: 14px;
+  color: #222222;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 167, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.topNav a:hover {
+  border-bottom: 3px solid #f16d7f;
+}
+
+@media (max-width: 991px) {
+  /* line 159, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+  .topNav a {
+    padding: 10px;
+  }
+}
+
+/* line 177, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.TopCrumb {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  /* line 177, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+  .TopCrumb {
+    flex-direction: column;
+  }
+}
+
+/* line 187, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.TopCrumb .leftPatch {
+  font-size: 24px;
+  font-weight: 900;
+  color: #f16d7f;
+  text-transform: uppercase;
+}
+
+/* line 195, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.TopCrumb .rightPatch a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #5b5b5b;
+  text-transform: uppercase;
+}
+
+/* line 202, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_header.scss */
+.TopCrumb .rightPatch .active {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f16d7f;
+  text-transform: uppercase;
+}
+
+/* line 3, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutStep {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+/* line 11, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutFormStep1 {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 75px;
+}
+
+@media (max-width: 768px) {
+  /* line 11, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+  .checkoutFormStep1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* line 21, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutFormStepLeft,
+.checkoutFormStepRight {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 345px;
+}
+
+@media (max-width: 390px) {
+  /* line 21, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+  .checkoutFormStepLeft,
+  .checkoutFormStepRight {
+    width: auto;
+  }
+}
+
+/* line 30, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutFormStepLeft a,
+.checkoutFormStepRight a {
+  font-size: 13px;
+  font-weight: 400;
+  color: #c2c2c2;
+  margin-bottom: 20px;
+}
+
+/* line 37, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutFormStepLeft label,
+.checkoutFormStepRight label {
+  font-weight: 700;
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 44, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutFormStepLeft label sup,
+.checkoutFormStepRight label sup {
+  font-size: 16px;
+  color: #f16d7f;
+}
+
+/* line 50, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutFormStepLeft .checkoutFormFast,
+.checkoutFormStepRight .checkoutFormFast {
+  margin-bottom: 0;
+  line-height: 30px;
+}
+
+/* line 54, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutFormStepLeft input,
+.checkoutFormStepRight input {
+  padding: 8px;
+  border: none;
+}
+
+/* line 57, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutFormStepLeft input:focus,
+.checkoutFormStepRight input:focus {
+  outline: none;
+}
+
+/* line 64, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutFormStepEmail, .checkoutFormStepPass {
+  padding: 12px;
+}
+
+/* line 68, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutFormStepTitle {
+  font-size: 16px;
+  color: #222222;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 40px;
+}
+
+/* line 77, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutFormStepBtn {
+  font-size: 14px;
+  color: #5b5b5b;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 180px;
+  height: 50px;
+  border: none;
+}
+
+@media (max-width: 330px) {
+  /* line 77, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+  .checkoutFormStepBtn {
+    width: 100px;
+  }
+}
+
+/* line 90, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.textinfStep {
+  font-size: 13px;
+  font-weight: 400;
+  color: #f16d7f;
+  line-height: 50px;
+}
+
+/* line 95, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.textinfStep sup {
+  font-size: 16px;
+}
+
+/* line 100, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_checkoutmain.scss */
+.checkoutFormStepRight span a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #222222;
+}
+
+/* line 1, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.subscribe {
+  height: 440px;
+  width: inherit;
+  background: url(../img/bgr2.jpg) no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+/* line 9, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.subscribe .container {
+  display: flex;
+  height: inherit;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+@media (max-width: 991px) {
+  /* line 9, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+  .subscribe .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding: 0;
+  }
+}
+
+/* line 28, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.feedback {
+  background: url(../img/Ellipse3.png) no-repeat;
+  height: 180px;
+  width: 520px;
+}
+
+@media (max-width: 575px) {
+  /* line 28, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+  .feedback {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* line 37, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.feedback > * {
+  padding-left: 110px;
+}
+
+/* line 42, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.feedbackText {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 48, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.feedbackAuthor1 {
+  font-size: 16px;
+  color: #f16d7f;
+  font-weight: 700;
+}
+
+/* line 55, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.feedbackAuthor2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 60, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.paginationBox {
+  display: flex;
+}
+
+/* line 63, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.paginationBox .pagination {
+  height: 5px;
+  width: 38px;
+  margin-right: 13px;
+  background-color: #c2c2c2;
+}
+
+/* line 70, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.paginationBox .active {
+  background-color: #f16d7f;
+}
+
+/* line 76, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.subscribeBox {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  /* line 76, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+  .subscribeBox {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 76, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+  .subscribeBox {
+    margin-top: 20px;
+  }
+}
+
+/* line 90, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.subscribeBox h4 {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 96, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.subscribeBox p {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@media (max-width: 575px) {
+  /* line 96, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+  .subscribeBox p {
+    text-align: center;
+  }
+}
+
+/* line 107, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.subscribeForm {
+  display: flex;
+  height: 45px;
+  width: 392px;
+}
+
+@media (max-width: 575px) {
+  /* line 107, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+  .subscribeForm {
+    width: auto;
+  }
+}
+
+/* line 115, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.subscribeForm > * {
+  border: none;
+  outline: none;
+}
+
+/* line 120, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.subscribeForm input {
+  height: inherit;
+  width: 283px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 17px 17px 17px 28px;
+  font-size: 14px;
+  color: #5b5b5b;
+  background-color: #e1e1e1;
+}
+
+@media (max-width: 575px) {
+  /* line 120, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+  .subscribeForm input {
+    width: auto;
+  }
+}
+
+/* line 134, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.subscribeForm button {
+  height: inherit;
+  width: 105px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: 14px;
+  color: white;
+  background-color: #f16d7f;
+}
+
+/* line 142, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_subscribe.scss */
+.subscribeForm button:focus {
+  outline: none;
+}
+
+/* line 1, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footerContent {
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+@media (max-width: 991px) {
+  /* line 1, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+  .footerContent {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+/* line 10, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footerContent .container {
+  display: flex;
+  min-height: 245px;
+}
+
+@media (max-width: 991px) {
+  /* line 10, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+  .footerContent .container {
+    flex-direction: column;
+  }
+}
+
+/* line 20, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footerContentInf {
+  width: 459px;
+  margin-right: 70px;
+}
+
+@media (max-width: 991px) {
+  /* line 20, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+  .footerContentInf {
+    margin-right: 0;
+    width: auto;
+  }
+}
+
+/* line 30, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footerContentInf p {
+  padding-top: 25px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  color: #c2c2c2;
+}
+
+@media (max-width: 991px) {
+  /* line 30, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+  .footerContentInf p {
+    padding-top: 15px;
+  }
+}
+
+/* line 44, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footerContentNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 48, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footerContentNav div {
+  width: 190px;
+}
+
+@media (max-width: 488px) {
+  /* line 48, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+  .footerContentNav div {
+    height: auto;
+  }
+}
+
+/* line 57, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footerContentNav h4 {
+  padding-bottom: 48px;
+  font-size: 18px;
+  color: #f16d7f;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  /* line 57, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+  .footerContentNav h4 {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 488px) {
+  /* line 57, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+  .footerContentNav h4 {
+    font-size: 14px;
+  }
+}
+
+/* line 72, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footerContentNav a {
+  line-height: 40px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: #c2c2c2;
+}
+
+@media (max-width: 991px) {
+  /* line 72, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+  .footerContentNav a {
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 488px) {
+  /* line 72, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+  .footerContentNav a {
+    font-size: 14px;
+  }
+}
+
+/* line 92, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footer {
+  background-color: #e6e6e6;
+}
+
+/* line 95, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+@media (max-width: 488px) {
+  /* line 95, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* line 109, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footerLeft {
+  font-weight: 300;
+  color: #c2c2c2;
+}
+
+/* line 114, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footernav {
+  display: flex;
+}
+
+/* line 117, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footernav :not(:last-child) {
+  margin-right: 8px;
+}
+
+/* line 121, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footernav a {
+  line-height: 32px;
+  width: 33px;
+  text-align: center;
+  background-color: black;
+  font-size: 16px;
+  color: #c2c2c2;
+}
+
+/* line 129, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_footer.scss */
+.footernav a:hover {
+  background-color: #f16d7f;
+  color: white;
+}
+
+/* header animation */
+/* line 2, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.logo {
+  transition-duration: 1s;
+}
+
+/* line 5, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* line 10, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.MyAccountTop:hover {
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+
+/* line 15, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.MyAccountTop:hover button {
+  box-shadow: 4px 4px 3px #e6657652;
+}
+
+/* line 20, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.topNav:hover .nav-link {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+/* main index animation */
+/* line 30, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+section img {
+  height: 280px;
+  transition-duration: 2s;
+  backface-visibility: hidden;
+}
+
+/* line 37, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+section:hover img {
+  transform: rotateY(150deg);
+}
+
+/* line 42, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.productContainer a:hover {
+  transition-duration: 2s;
+  text-decoration: none;
+  color: black;
+  border-radius: 50%;
+}
+
+/* featureBanner animation */
+/* line 54, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.featureBox .featureBoxFormImg img {
+  animation: featureImg 5s linear 0s infinite;
+}
+
+@keyframes featureImg {
+  to {
+    transform: rotateY(0deg);
+  }
+  from {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Subscribe animation */
+/* line 72, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.subscribeForm input {
+  box-shadow: 0 2px 8px #e1e1e1;
+  transition-duration: .5s;
+}
+
+/* line 76, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.subscribeForm input:hover {
+  transform: scale(1.05);
+}
+
+/* line 81, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.subscribeForm button {
+  box-shadow: 4px 2px 8px #f16d7f;
+  transition-duration: .5s;
+}
+
+/* line 85, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.subscribeForm button:hover {
+  transform: scale(1.05);
+}
+
+/* Footer animation */
+/* line 94, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.footerContentNav a {
+  transition-duration: .5s;
+}
+
+/* line 97, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.footerContentNav a:hover {
+  transform: scale(1.1);
+  color: #f16d7f;
+}
+
+/* line 106, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.footernav a {
+  position: relative;
+}
+
+/* line 109, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.footernav a:hover {
+  animation: footernav .4s linear 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes footernav {
+  to {
+    top: 0;
+  }
+  from {
+    top: 5px;
+    transform: scale(1.1);
+  }
+}
+
+/* productMain animation */
+/* line 128, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.LeftmainNav ul {
+  animation-name: LeftmainNavAnim;
+  animation-duration: 0.5s, .2s;
+  animation-delay: 0, 0.5s;
+}
+
+@keyframes LeftmainNavAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 145, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.pagination button {
+  transition-duration: .5s;
+  transition-delay: .2s;
+}
+
+/* line 149, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.pagination button:hover {
+  background-color: #fddce1a8;
+  box-shadow: 0 0 17px #f16d7f;
+}
+
+/* infStockProduct animation */
+/* line 159, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.infStockProduct .freeDevilery,
+.infStockProduct .sales,
+.infStockProduct .quality {
+  animation: featureImg 5s linear 0s infinite;
+}
+
+/* line 164, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.infStockProduct .freeDevilery:hover,
+.infStockProduct .sales:hover,
+.infStockProduct .quality:hover {
+  animation-play-state: paused;
+}
+
+/* shoppingcardMain animation */
+/* line 171, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.shoppingCardProductBtn {
+  transition-duration: .5s;
+}
+
+/* line 174, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.shoppingCardProductBtn:hover {
+  transform: scale(1.05);
+}
+
+/* line 181, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.CouponDiscont button,
+.shippingaddress button {
+  transition-duration: .5s;
+}
+
+/* line 184, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.CouponDiscont button:hover,
+.shippingaddress button:hover {
+  transform: scale(1.05);
+}
+
+/* line 191, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.totalForm button {
+  transition-duration: .5s;
+}
+
+/* line 194, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.totalForm button:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 2px 8px #f16d7f;
+}
+
+/* singlepage animation */
+/* line 203, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.specificationsProduct button {
+  transition-duration: .5s;
+  transition-delay: .2s;
+}
+
+/* line 207, ../Study/1 four/Pro verstca/Lesson 7 и 8/sass/_animation.scss */
+.specificationsProduct button:hover {
+  transform: scale(1.1);
+  background-color: #fddce1a8;
+  box-shadow: 0 0 17px #f16d7f;
+}
+
+/*# sourceMappingURL=checkout.css.map */

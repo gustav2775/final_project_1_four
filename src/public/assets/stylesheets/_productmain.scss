@@ -1,0 +1,278 @@
+.productmain {
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width:1023px) {
+      flex-direction: column;
+    }
+  }
+
+  .LeftmainNav {
+    min-width: 190px;
+
+
+    @media (max-width:1023px) {
+      display: flex;
+      justify-content: space-around;
+      min-width: 160px;
+      padding-bottom: 15px;
+    }
+
+    details {
+      min-width: 100px;
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+    }
+
+    summary {
+
+      border-left: 5px solid $roseMainColor;
+      padding: 10px;
+      font-size: 14px;
+      color: $roseMainColor;
+      font-weight: 700;
+    }
+
+    ul {
+      padding-left: 15px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      font-size: 14px;
+      color: $lightGrayColor;
+      text-decoration: none;
+    }
+
+  }
+
+  .trending,
+  .size {
+    float: left;
+  }
+
+  .trending,
+  .size,
+  .prise {
+    width: 270px;
+    min-height: 100px;
+
+    @media(max-width:992px) {
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 14px;
+      color: rgb(111, 110, 110);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .radio {
+      input[type=radio] {
+        display: none;
+      }
+
+      input:checked+label {
+        color: $roseMainColor;
+      }
+
+    }
+
+    .radio,
+    .checkbox,
+    .priseUSD {
+      font-size: 14px;
+      color: rgb(111, 110, 110);
+      font-weight: 400;
+    }
+  }
+
+  .trending,
+  .size {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .checkbox {
+    label {
+      width: 65px;
+    }
+
+    input {
+      margin-right: 10px;
+    }
+
+  }
+
+  .prise {
+    display: flex;
+    flex-direction: column;
+    background: center 39px url(../img/range.png) no-repeat;
+
+    .priseUSD {
+      padding-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .sort {
+
+    display: flex;
+    align-items: center;
+
+    h3,
+    button {
+      width: 90px;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 400;
+      color: rgb(111, 110, 110);
+      border: none;
+      letter-spacing: 1px;
+      margin: 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .pagination {
+    grid-column: 2/5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 38px;
+    padding-bottom: 100px;
+
+    @media (max-width:768px) {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        margin-top: 15px;
+      }
+    }
+
+    nav a:nth-child(n+2):nth-child(-n+6) {
+      padding-right: 18px
+    }
+
+    a {
+      font-size: 16px;
+      font-weight: 300;
+      color: $lightGrayColor;
+
+      i {
+        width: 35px;
+        text-align: center;
+      }
+
+      &:hover {
+        color: $roseMainColor
+      }
+    }
+
+    button {
+      font-size: 16px;
+      color: $roseMainColor;
+      font-weight: 700;
+      padding: 16px 45px;
+      border: 1px solid $roseMainColor;
+      border-radius: 3px;
+    }
+  }
+}
+.productBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+
+  @media(max-width:992px) {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+  }
+
+  @media(max-width:540px) {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  section {
+    position: relative;
+    height: 355px;
+
+    &:hover {
+      box-shadow: 10px 10px 22px #acaaaa;
+    }
+
+    &:hover .addCardwrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+    }
+
+    @media(max-width:540px) {
+      margin: 15px;
+    }
+
+    .addCardwrap {
+      position: absolute;
+      display: none;
+      width: 100%;
+      height: inherit;
+      background: rgba(0, 0, 0, 0.5);
+
+      .addCard {
+        line-height: 36px;
+        text-decoration: none;
+        font-size: 13px;
+        color: white;
+        font-weight: 700;
+
+        border: 1px solid white;
+        background: url(../img/market2.png) no-repeat;
+        background-position: 10px;
+        padding: 16px 16px 16px 40px;
+        box-sizing: border-box;
+      }
+
+    }
+
+    .productDisable {
+      position: absolute;
+      height: inherit;
+
+      h3 {
+        font-size: 13px;
+        font-weight: 400;
+        color: rgb(111, 110, 110);
+        text-transform: uppercase;
+        line-height: 50px;
+        padding-left: 14px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 700;
+        color: rgb(241, 109, 127);
+        text-transform: uppercase;
+        padding-left: 14px;
+        margin: 0;
+      }
+    }
+  }
+}
